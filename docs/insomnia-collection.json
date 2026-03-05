@@ -1,0 +1,397 @@
+{
+	"log": {
+		"version": "1.2",
+		"creator": {
+			"name": "Insomnia REST Client",
+			"version": "insomnia.desktop.app:v12.4.0"
+		},
+		"entries": [
+			{
+				"startedDateTime": "2026-03-05T17:26:42.032Z",
+				"time": 4.013,
+				"request": {
+					"method": "GET",
+					"url": "http://localhost:3000/eventos",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "User-Agent",
+							"value": "insomnia/12.4.0"
+						}
+					],
+					"queryString": [],
+					"postData": {
+						"mimeType": "",
+						"text": ""
+					},
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"response": {
+					"status": 200,
+					"statusText": "OK",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"name": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"name": "Content-Length",
+							"value": "283"
+						},
+						{
+							"name": "ETag",
+							"value": "W/\"11b-z8FvIeQPP5FrQ8YHxV5WHND2JwI\""
+						},
+						{
+							"name": "Date",
+							"value": "Thu, 05 Mar 2026 13:16:10 GMT"
+						},
+						{
+							"name": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"name": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"content": {
+						"size": 283,
+						"mimeType": "application/json; charset=utf-8",
+						"text": "[{\"id\":1,\"nome\":\"Workshop de Node.js\",\"descricao\":\"Aprenda Node.js do zero\",\"data\":\"2025-08-15\",\"local\":\"SENAI - Sala 3\",\"capacidade\":30},{\"id\":2,\"nome\":\"Hackathon SENAI 2025\",\"descricao\":\"Maratona de programação\",\"data\":\"2025-09-20\",\"local\":\"SENAI - Auditório\",\"capacidade\":100}]"
+					},
+					"redirectURL": "",
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"cache": {},
+				"timings": {
+					"blocked": -1,
+					"dns": -1,
+					"connect": -1,
+					"send": 0,
+					"wait": 4.013,
+					"receive": 0,
+					"ssl": -1
+				},
+				"comment": "Listar Eventos"
+			},
+			{
+				"startedDateTime": "2026-03-05T17:26:42.032Z",
+				"time": 3.54,
+				"request": {
+					"method": "GET",
+					"url": "http://localhost:3000/eventos/1",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "User-Agent",
+							"value": "insomnia/12.4.0"
+						}
+					],
+					"queryString": [],
+					"postData": {
+						"mimeType": "",
+						"text": ""
+					},
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"response": {
+					"status": 200,
+					"statusText": "OK",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"name": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"name": "Content-Length",
+							"value": "136"
+						},
+						{
+							"name": "ETag",
+							"value": "W/\"88-yZ+Mfs3k1SfYeKIuKs3f32a8wsM\""
+						},
+						{
+							"name": "Date",
+							"value": "Thu, 05 Mar 2026 13:18:09 GMT"
+						},
+						{
+							"name": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"name": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"content": {
+						"size": 136,
+						"mimeType": "application/json; charset=utf-8",
+						"text": "{\"id\":1,\"nome\":\"Workshop de Node.js\",\"descricao\":\"Aprenda Node.js do zero\",\"data\":\"2025-08-15\",\"local\":\"SENAI - Sala 3\",\"capacidade\":30}"
+					},
+					"redirectURL": "",
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"cache": {},
+				"timings": {
+					"blocked": -1,
+					"dns": -1,
+					"connect": -1,
+					"send": 0,
+					"wait": 3.54,
+					"receive": 0,
+					"ssl": -1
+				},
+				"comment": "Buscar Evento por ID"
+			},
+			{
+				"startedDateTime": "2026-03-05T17:26:42.032Z",
+				"time": 53.088,
+				"request": {
+					"method": "POST",
+					"url": "http://localhost:3000/eventos",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"name": "User-Agent",
+							"value": "insomnia/12.4.0"
+						}
+					],
+					"queryString": [],
+					"postData": {
+						"mimeType": "application/json",
+						"text": "{\n\"nome\": \"Palestra sobre APIs REST\",\n\"descricao\": \"Como construir APIs profissionais\",\n\"data\": \"2025-10-10\",\n\"local\": \"SENAI - Sala 5\",\n\"capacidade\": 50\n}"
+					},
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"response": {
+					"status": 201,
+					"statusText": "Created",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"name": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"name": "Content-Length",
+							"value": "151"
+						},
+						{
+							"name": "ETag",
+							"value": "W/\"97-RG5gZ2N3h9BuMuGXzUzsKYRlYCQ\""
+						},
+						{
+							"name": "Date",
+							"value": "Thu, 05 Mar 2026 13:22:22 GMT"
+						},
+						{
+							"name": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"name": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"content": {
+						"size": 151,
+						"mimeType": "application/json; charset=utf-8",
+						"text": "{\"id\":3,\"nome\":\"Palestra sobre APIs REST\",\"descricao\":\"Como construir APIs profissionais\",\"data\":\"2025-10-10\",\"local\":\"SENAI - Sala 5\",\"capacidade\":50}"
+					},
+					"redirectURL": "",
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"cache": {},
+				"timings": {
+					"blocked": -1,
+					"dns": -1,
+					"connect": -1,
+					"send": 0,
+					"wait": 53.088,
+					"receive": 0,
+					"ssl": -1
+				},
+				"comment": "Criar Evento"
+			},
+			{
+				"startedDateTime": "2026-03-05T17:26:42.032Z",
+				"time": 5.888,
+				"request": {
+					"method": "PUT",
+					"url": "http://localhost:3000/eventos/3",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"name": "User-Agent",
+							"value": "insomnia/12.4.0"
+						}
+					],
+					"queryString": [],
+					"postData": {
+						"mimeType": "application/json",
+						"text": "{\n\"nome\": \"Palestra sobre APIs REST (Atualizada)\",\n\"capacidade\": 80\n}"
+					},
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"response": {
+					"status": 200,
+					"statusText": "OK",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"name": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"name": "Content-Length",
+							"value": "164"
+						},
+						{
+							"name": "ETag",
+							"value": "W/\"a4-TLdG43f/MotNF7HtzX3oTg8lKkE\""
+						},
+						{
+							"name": "Date",
+							"value": "Thu, 05 Mar 2026 13:23:34 GMT"
+						},
+						{
+							"name": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"name": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"content": {
+						"size": 164,
+						"mimeType": "application/json; charset=utf-8",
+						"text": "{\"id\":3,\"nome\":\"Palestra sobre APIs REST (Atualizada)\",\"descricao\":\"Como construir APIs profissionais\",\"data\":\"2025-10-10\",\"local\":\"SENAI - Sala 5\",\"capacidade\":80}"
+					},
+					"redirectURL": "",
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"cache": {},
+				"timings": {
+					"blocked": -1,
+					"dns": -1,
+					"connect": -1,
+					"send": 0,
+					"wait": 5.888,
+					"receive": 0,
+					"ssl": -1
+				},
+				"comment": "Atualizar Evento"
+			},
+			{
+				"startedDateTime": "2026-03-05T17:26:42.032Z",
+				"time": 15.866999999999999,
+				"request": {
+					"method": "DELETE",
+					"url": "http://localhost:3000/eventos/3",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "User-Agent",
+							"value": "insomnia/12.4.0"
+						}
+					],
+					"queryString": [],
+					"postData": {
+						"mimeType": "",
+						"text": ""
+					},
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"response": {
+					"status": 204,
+					"statusText": "No Content",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"name": "Date",
+							"value": "Thu, 05 Mar 2026 13:24:45 GMT"
+						},
+						{
+							"name": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"name": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"content": {
+						"size": 0,
+						"mimeType": "",
+						"text": ""
+					},
+					"redirectURL": "",
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"cache": {},
+				"timings": {
+					"blocked": -1,
+					"dns": -1,
+					"connect": -1,
+					"send": 0,
+					"wait": 15.866999999999999,
+					"receive": 0,
+					"ssl": -1
+				},
+				"comment": "Deletar Evento"
+			}
+		]
+	}
+}
