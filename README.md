@@ -1,12 +1,14 @@
-# Notificações API
-API para módulo de notificações por e-mail de uma plataforma de eventos.
+# 🔔 Notificações API
 
-# Como rodar
-1. Clone o repositório
-2. Execute `npm install`
-3. Execute `npm start`
-4. Acesse `http://localhost:3000`
+API REST para o módulo de notificações por e-mail de uma plataforma de gerenciamento de eventos
 
-# Tecnologias
-- Node.js
-- Express.js
+## 📋 Sobre o Projeto
+Este projeto faz parte da Situação de Aprendizagem do curso de Programação Back-End do SENAI.
+O módulo é responsável por enviar notificações (confirmação de inscrição, lembretes)
+para participantes de eventos.
+
+## 🚀 Como Rodar
+1. Clone o repositório:
+    ```bash
+    git clone https://github.com/luizastecca/notificacoes-api
+    ```
